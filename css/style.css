@@ -14,11 +14,10 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
 }
-main {
+.container {
   max-width: 870px;
   margin: 0 auto;
   padding: 30px;
-  background-color: #ffffff;
 }
 .section-title {
   color: #562eff;
@@ -27,8 +26,11 @@ hr {
   border: 1px solid #d1d1d1;
   margin-bottom: 30px;
 }
-.highlight-text{
-  color: #562EFF;
+.highlight-text {
+  color: #562eff;
+}
+section {
+  background-color: #fff;
 }
 /*-------------
 Navbar-Section
@@ -90,20 +92,53 @@ Players-Section
 /*-------------
 Blogs-Section
 --------------*/
-.blogs{
+.blogs {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
-.blog{
+.blog {
   display: flex;
   align-items: center;
   margin: 30px 0;
 }
-.blog-image img{
+.blog-image img {
   width: 177px;
   height: 117px;
 }
-.blog-details{
+.blog-details {
   margin-left: 16px;
+}
+/*-------------
+Courses-Section
+--------------*/
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.course {
+  padding: 10px;
+  width: 245px;
+  box-shadow: 7px 5px 42px lightgrey;
+  border-radius: 5px;
+}
+.course img {
+  width: 224px;
+  height: 104px;
+}
+.course-author {
+  color: #ff4a60;
+}
+.course-ratting {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.course-duration {
+  color: #ff4a60;
+  background-color: #fee5df;
+  margin-left: 20px;
+  padding: 5px;
+  border-radius: 20px;
 }

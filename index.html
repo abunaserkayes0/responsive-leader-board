@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Leader Board</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d48a6e867f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -26,81 +30,127 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div class="top-players">
-          <h2 class="section-title">Top Players</h2>
-          <div class="players">
-            <div class="single-player">
-              <img src="images/players/player-1.png" alt="" />
-              <h3>John Smith</h3>
-            </div>
-            <div class="single-player">
-              <img src="images/players/player-2.png" alt="" />
-              <h3>Pro Rasel</h3>
-            </div>
-            <div class="single-player">
-              <img src="images/players/player-3.png" alt="" />
-              <h3>Abu Sufian</h3>
-            </div>
-            <div class="single-player">
-              <img src="images/players/player-4.png" alt="" />
-              <h3>Shajedul Karim</h3>
-            </div>
-            <div class="single-player">
-              <img src="images/players/player-5.png" alt="" />
-              <h3>Maruf Ahmed</h3>
-            </div>
-            <div class="single-player">
-              <img src="images/players/player-6.png" alt="" />
-              <h3>Mujahid</h3>
-            </div>
+      <section class="container">
+        <h2 class="section-title">Top Players</h2>
+        <div class="players">
+          <div class="single-player">
+            <img src="images/players/player-1.png" alt="" />
+            <h3>John Smith</h3>
           </div>
+          <div class="single-player">
+            <img src="images/players/player-2.png" alt="" />
+            <h3>Pro Rasel</h3>
+          </div>
+          <div class="single-player">
+            <img src="images/players/player-3.png" alt="" />
+            <h3>Abu Sufian</h3>
+          </div>
+          <div class="single-player">
+            <img src="images/players/player-4.png" alt="" />
+            <h3>Shajedul Karim</h3>
+          </div>
+          <div class="single-player">
+            <img src="images/players/player-5.png" alt="" />
+            <h3>Maruf Ahmed</h3>
+          </div>
+          <div class="single-player">
+            <img src="images/players/player-6.png" alt="" />
+            <h3>Mujahid</h3>
+          </div>
+        </div>
+        <hr />
+        <h2 class="section-title">Top Blogs</h2>
+        <div class="blogs">
+          <article class="blog">
+            <div class="blog-image">
+              <img src="images/blogs/blog-1.png" alt="" />
+            </div>
+            <div class="blog-details">
+              <h3>13 of My Favorite UI/UX Goodies</h3>
+              <p>By <span class="highlight-text">Danny Sapio</span></p>
+            </div>
+          </article>
+          <article class="blog">
+            <div class="blog-image">
+              <img src="images/blogs/blog-2.png" alt="" />
+            </div>
+            <div class="blog-details">
+              <h3>UI cheat sheet: list vs grids</h3>
+              <p>By <span class="highlight-text">Tess Gadd</span></p>
+            </div>
+          </article>
+          <article class="blog">
+            <div class="blog-image">
+              <img src="images/blogs/blog-3.png" alt="" />
+            </div>
+            <div class="blog-details">
+              <h3>7 typography tips for interface design</h3>
+              <p>By <span class="highlight-text">Jeremiah Lam</span></p>
+            </div>
+          </article>
+          <article class="blog">
+            <div class="blog-image">
+              <img src="images/blogs/blog-4.png" alt="" />
+            </div>
+            <div class="blog-details">
+              <h3>Your logo is copied</h3>
+              <p>By <span class="highlight-text">Ferdinand Vogler</span></p>
+            </div>
+          </article>
         </div>
       </section>
-      <hr>
-      <section>
-        <div class="top-blogs">
-          <h2 class="section-title">Top Blogs</h2>
-          <div class="blogs">
-            <article class="blog">
-                <div class="blog-image">
-                  <img src="images/blogs/blog-1.png" alt="">
-                </div>
-                <div class="blog-details">
-                  <h3>13 of My Favorite UI/UX Goodies</h3>
-                  <p>By <span class="highlight-text">Danny Sapio</span></p>
-                </div>
-            </article>
-            <article class="blog">
-                <div class="blog-image">
-                  <img src="images/blogs/blog-2.png" alt="">
-                </div>
-                <div class="blog-details">
-                  <h3>UI cheat sheet: list vs grids</h3>
-                  <p>By <span class="highlight-text">Tess Gadd</span></p>
-                </div>
-            </article>
-            <article class="blog">
-                <div class="blog-image">
-                  <img src="images/blogs/blog-3.png" alt="">
-                </div>
-                <div class="blog-details">
-                  <h3>7 typography tips for interface design</h3>
-                  <p>By <span class="highlight-text">Jeremiah Lam</span></p>
-                </div>
-            </article>
-            <article class="blog">
-              <div class="blog-image">
-                <img src="images/blogs/blog-4.png" alt="">
+      <section class="container">
+        <h2 class="section-title">Latest Courses</h2>
+        <div class="courses">
+          <div class="course">
+            <img src="images/courses/course-1.png" alt="" />
+            <h3>React the Complete Guide 2022</h3>
+            <span class="course-author">Reed Krakoff.</span>
+            <div class="course-ratting">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span>4.5</span>
+              <div class="course-duration">
+                <span><i class="fa-solid fa-clock"></i> 1.30hr</span>
               </div>
-              <div class="blog-details">
-                <h3>Your logo is copied</h3>
-                <p>By <span class="highlight-text">Ferdinand Vogler</span></p>
+            </div>
+          </div>
+          <div class="course">
+            <img src="images/courses/course-2.png" alt="" />
+            <h3>Powerpoint 2020 Mastering Course</h3>
+            <span class="course-author">Walter Scott</span>
+            <div class="course-ratting">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span>4.4</span>
+              <div class="course-duration">
+                <span><i class="fa-solid fa-clock"></i> 1.10hr</span>
               </div>
-          </article>
+            </div>
+          </div>
+          <div class="course">
+            <img src="images/courses/course-3.png" alt="" />
+            <h3>The Complete Js Course 2020</h3>
+            <span class="course-author">Reed Krakoff.</span>
+            <div class="course-ratting">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span>4.3</span>
+              <div class="course-duration">
+                <span><i class="fa-solid fa-clock"></i> 1.20hr</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       </section>
     </main>
   </body>
