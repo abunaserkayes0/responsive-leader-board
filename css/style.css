@@ -69,7 +69,14 @@ nav {
   margin-right: 36px;
   font-weight: bold;
 }
-
+#nav-toggler,
+.nav-toggle-icon {
+  display: none;
+}
+.bars-icon {
+  color: white;
+  font-size: 30px;
+}
 /*-------------
 Players-Section
 --------------*/
@@ -141,4 +148,54 @@ Courses-Section
   margin-left: 20px;
   padding: 5px;
   border-radius: 20px;
+}
+
+/*-------------------------------------------------
+Media-query section that's use in mobile responsive
+--------------------------------------------------*/
+@media only screen and (max-width: 687px) {
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .single-player,
+  .blog {
+    display: block;
+    text-align: center;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .course {
+    margin: 0 auto;
+  }
+  .nav-toggle-icon {
+    display: block;
+  }
+  .navigation {
+    margin: 0;
+    background: linear-gradient(
+      rgba(84, 46, 255, 0.829),
+      rgba(84, 46, 255, 0.74)
+    );
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-330px);
+    transition: 0.7s ease-in-out;
+  }
+  .navigation li {
+    padding: 10px 0;
+  }
+  .navigation li a {
+    margin: 0;
+    font-size: 20px;
+  }
+  #nav-toggler:checked ~ .navigation {
+    transform: translateY(0);
+  }
 }
